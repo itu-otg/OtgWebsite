@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Game Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-slideshow"></div>
+
+  <div class="menu-wrapper">
+    <div class="menu-panel">
+      <div class="logo">🔥 KOZOMO 🔥</div>
+      <div id="main-menu" class="menu-section active">
+        <!-- main menu buttons -->
+        <div class="menu-buttons">
+          <button>Start Game</button>
+          <button>Load Game</button>
+          <button onclick="showSection('options-menu')">Options</button>
+          <button onclick="showSection('credits-menu')">Credits</button>
+          <button>Exit</button>
+        </div>
+      </div>
+    
+      <div id="options-menu" class="menu-section inactive">
+        <!-- options buttons -->
+         <p>Here goes the second panel</p>
+         <div class="menu-buttons">
+          <button onclick="showSection('main-menu')">Back</button>
+          </div>
+      </div>
+    
+      <div id="credits-menu" class="menu-section inactive">
+        <!-- credits content -->
+         <p>Here goes the third panel</p>
+         <div class="menu-buttons">
+         <button onclick="showSection('main-menu')">Back</button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
