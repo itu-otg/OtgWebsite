@@ -1,8 +1,8 @@
 const images = [
-    'images/bg1.png',
-    'images/bg2.png',
-    'images/bg3.png',
-    'images/bg4.png'
+    'res/bg1.png',
+    'res/bg2.png',
+    'res/bg3.png',
+    'res/bg4.png'
   ];
   
   let currentIndex = 0;
@@ -38,4 +38,20 @@ const images = [
     const next = document.getElementById(id);
     next.classList.remove('inactive');
     next.classList.add('active');
+  }
+
+  function openRegisterForm(){
+    window.open("https://forms.gle/aL5QVwwH2tibHuJd7", "_blank").focus();
+  }
+
+  function openInstagram(){
+    window.open("https://www.instagram.com/ituotg/", "_blank").focus();
+  }
+
+  function openYoutube(){
+    window.open("https://www.youtube.com/ituotg", "_blank").focus();
+  }
+
+  function openItch(){
+    window.open("https://ituotg.itch.io/", "_blank").focus();
   }

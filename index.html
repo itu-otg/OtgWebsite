@@ -10,33 +10,56 @@
 
   <div class="menu-wrapper">
     <div class="menu-panel">
-      <div class="logo">🔥 KOZOMO 🔥</div>
+      <div class="logo">
+        <img src="res/otg_logo.svg">
+        <p>İTÜ OTG</p>
+      </div>
+      <div class="subtitle">
+        Oyun Tasarlama ve Geliştirme Kulübü
+      </div>
       <div id="main-menu" class="menu-section active">
         <!-- main menu buttons -->
         <div class="menu-buttons">
-          <button>Start Game</button>
-          <button>Load Game</button>
-          <button onclick="showSection('options-menu')">Options</button>
-          <button onclick="showSection('credits-menu')">Credits</button>
-          <button>Exit</button>
+          <button onclick="openRegisterForm()">OTG'li Ol!</button>
+          <button onclick="showSection('about-menu')">Hakkımızda</button>
+          <button onclick="showSection('board-menu')">Yönetim Kurulumuz</button>
+          <button onclick="openInstagram()">Instagram</button>
+          <button onclick="openYoutube()">Youtube</button>
+          <button onclick="openItch()">Itch</button>
         </div>
       </div>
     
-      <div id="options-menu" class="menu-section inactive">
-        <!-- options buttons -->
-         <p>Here goes the second panel</p>
-         <div class="menu-buttons">
-          <button onclick="showSection('main-menu')">Back</button>
-          </div>
-      </div>
-    
-      <div id="credits-menu" class="menu-section inactive">
-        <!-- credits content -->
-         <p>Here goes the third panel</p>
-         <div class="menu-buttons">
+      <div id="temp-menu" class="menu-section inactive">
+        <p>Here goes the second panel</p>
+        <div class="menu-buttons">
          <button onclick="showSection('main-menu')">Back</button>
          </div>
+     </div>
+     
+      <div id="about-menu" class="menu-section inactive">
+        <div class="text-container">
+          <h3>Hakkımızda</h3>
+          <p>2016 Şubat ayında Video Oyunu Geliştirme adıyla kurulup 2017 Mayıs ayında isim ve rejim değişikliği ile varlığını sürdüren Oyun Tasarlama ve Geliştirme Kulübü olarak, başta Türkiye’de olmak üzere, kendisini video oyunları, fiziksel oyunlar, kutu oyunları ve daha birçok farklı türden oyun geliştirmeye adamış ve bunu hobi olarak yapan kişileri bir araya getiren bir topluluk olup bu kişilerin nitelikli oyun geliştiricileri olmasını sağlamaya çalışmaktayız. Başta topluluğumuzdaki üyeler olmak üzere Türkiye’de oyun kültürünün ve bilgisinin doğru bir şekilde artırılması ve oyunlara hak ettiği değerin verilmesini sağlamak amaçlarımız arasındadır.</p>
+        </div>
+        <div class="menu-buttons">
+        <button onclick="showSection('main-menu')">Geri Dön</button>
+        </div>
       </div>
+      
+      <div id="board-menu" class="menu-section inactive">
+        <div class="text-container">
+          <h3>Yönetim Kurulumuz</h3>
+          <p>Ferhat Kunduracı</p>
+          <p>Selin Kar</p>
+          <p>Beren Çalık</p>
+          <p>Arda Çelik</p>
+          <p>Irmak Bekmez</p>
+        </div>
+        <div class="menu-buttons">
+        <button onclick="showSection('main-menu')">Geri Dön</button>
+        </div>
+      </div>
+    
     </div>
   </div>
 
