@@ -39,8 +39,8 @@ body {
   width: 50vh;
   background-color: rgba(34, 34, 34, 0.9);
   border-right: 4px solid #555;
-  padding: 2vh 2vh;
-  padding-bottom: 5vh;
+  padding: 2vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
